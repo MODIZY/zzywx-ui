@@ -1,5 +1,17 @@
 <template>
-  <button :style="{}" vif>
+  <button
+    :class="{
+      'zzy-btn': true,
+      'zzy-btn-medium': size == 'medium',
+      'zzy-btn-small': size == 'small',
+      'zzy-btn-mini': size == 'mini',
+      'zzy-btn-primary':type=='primary',
+      'zzy-btn-success':type=='success',
+      'zzy-btn-info':type=='info',
+      'zzy-btn-warning':type=='warning',
+      'zzy-btn-danger':type=='danger',
+    }"
+  >
     <slot></slot>
     <div></div>
   </button>
@@ -11,32 +23,12 @@ export default {
     size: {
       // button样式
       type: String,
-      default: '',
+      default: "",
+    },
+    type:{
+      type:String,
+      default:""
     }
   },
 };
 </script>
-<style  scoped lang="scss">
-  button{
-    display: inline-block;
-    line-height: 1;
-    white-space: nowrap;
-    cursor: pointer;
-    background: #fff;
-    border: 1px solid #dcdfe6;
-    color: #606266;
-    -webkit-appearance: none;
-    text-align: center;
-    box-sizing: border-box;
-    outline: none;
-    margin: 0;
-    transition: .1s;
-    font-weight: 500;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    padding: 12px 20px;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-</style>

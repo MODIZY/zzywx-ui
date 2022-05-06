@@ -1,13 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-// import '../components/css/demo.scss';
-// import '../components/css/card.scss';
-// import Demo from '../components/lib/demo/index'
-// import Card from '../components/lib/card/index'
+import '../dist/css/index.css';
 import Zbtn from '../components/lib/button/index'
-// Vue.use(Demo)
-// Vue.use(Card)
 Vue.use(Zbtn)
 
 // import 'zzywx-ui/dist/css/index.css'

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <z-btn>默认按钮</z-btn>
+    <z-btn size="medium">默认按钮</z-btn>
   </div>
 </template>
 

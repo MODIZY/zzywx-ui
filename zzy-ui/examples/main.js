@@ -2,13 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import '../dist/css/index.css';
-import Zbtn from '../components/lib/button/index'
-Vue.use(Zbtn)
-
-// import 'zzywx-ui/dist/css/index.css'
-// import MUI from 'zzywx-ui'
-// console.log(MUI);
-// Vue.use(MUI)
+import MUI from '../dist/index.umd.js'
+Vue.use(MUI)
 
 Vue.config.productionTip = false
 

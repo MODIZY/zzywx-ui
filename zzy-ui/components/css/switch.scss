@@ -1,0 +1,24 @@
+
+* {
+    box-sizing: content-box;
+  }
+  
+  .z-switch {
+    position: relative;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 0.1s linear;
+
+  
+  span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.1s linear;
+  } 
+ }

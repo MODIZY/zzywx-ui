@@ -1,11 +1,15 @@
 import Demo from './demo'
 import Card from './card'
 import Button from './button'
+import slider from './slider'
+import switchs from './switch'
 
 const components={
     Demo,
     Card,
-    Button
+    Button,
+    slider,
+    switchs
 }
 
 const install=function(Vue){
